@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            margin: 5px;
+            background-color: #DBDBFF;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 125px 1fr 1fr;
+            grid-template-rows: 75px 1fr;
+            gap: 5px;
+        }
+
+        .header {
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 2;
+            border: 3px solid black;
+            background-color: #263159;
+            color: #FFFBEB;
+            text-align: center;
+        }
+
+        .side_menu {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            padding: 5px;
+            border: 3px solid black;
+            text-align: center;
+        }
+
+        .tab_layout {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            border: 3px solid black;
+        }
+
+        .form_layout {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start: 2;
+            padding: 5px;
+            border: 3px solid black;
+        }
+
+        .fend {
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #FFFBEB;
+            margin-bottom: 15px;
+
+        }
+
+        .bend {
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #495579;
+        }
+
+        th,
+        td {
+            border: 3px solid #CE7777;
+            text-align: center;
+        }
+
+        table {
+            border: 5px solid #2B3A55;
+
+        }
+        .grow_img{
+    transition: 1s ease;
+    background: url('./bg.jpeg');
+    color: white;
+    font-weight: bold;
+    }
+    
+    .grow_img:hover{
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    transition: 1s ease;
+    }
+
+        .container1 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+        }
+
+        .tab1 {
+            grid-column-start: 2;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+
+        .row1 {
+            padding: 10px 30px 10px 30px;
+            background-color: #9292FF;
+            border-radius: 10px;
+            margin: 25px;
+            box-shadow: 15px 0px 25px #000024;
+        }
+
+        .container_1 {
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>I am Prudhvi</h1>
+        </div>
+        <div class="side_menu">
+            <div class="fend">
+                <div class="frontend">
+                    <h3>FrontEnd</h3>
+                </div>
+                <h3>HTML</h3>
+                <h3>CSS</h3>
+                <h3>JavaScript</h3>
+                <h3>Angular</h3>
+                <h3>JSON</h3>
+                <h3>Bootstrap</h3>
+            </div>
+            <div class="bend">
+                <div class="backend">
+                    <h3>BackEnd</h3>
+                </div>
+                <h3>PHP</h3>
+                <h3>Java</h3>
+                <h3>Python</h3>
+                <h3>Node.js</h3>
+                <h3>Express.js</h3>
+                <h3>SQL</h3>
+            </div>
+        </div>
+        <div class="tab_layout">
+            <div class="container1">
+                <div class="tab1">
+                    <table class="grow_img">
+                        <thead>
+                            <th>SRate</td>
+                            <th>Avg</th>
+                            <th>Runs</th>
+                            <th>BASRA</th>
+                            <th>Impact</th>
+                            <th>MoM</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td title="sachin">100</td>
+                                <td title="sachin">45</td>
+                                <td title="sachin">3000</td>
+                                <td title="sachin">3000</td>
+                                <td title="sachin">3000</td>
+                                <td title="sachin">3000</td>
+                            </tr>
+                            <tr>
+                                <td title="virat">200</td>
+                                <td title="virat">25</td>
+                                <td title="virat">1000</td>
+                                <td title="virat">200</td>
+                                <td title="virat">200</td>
+                                <td title="virat">200</td>
+                            </tr>
+                            <tr>
+                                <td title="rohit">60</td>
+                                <td title="rohit">60</td>
+                                <td title="rohit">1000</td>
+                                <td title="rohit">60</td>
+                                <td title="rohit">60</td>
+                                <td title="rohit">60</td>
+                            </tr>
+                            <tr>
+                                <td title="dhoni">90</td>
+                                <td title="dhoni">55</td>
+                                <td title="dhoni">4000</td>
+                                <td title="dhoni">90</td>
+                                <td title="dhoni">90</td>
+                                <td title="dhoni">90</td>
+                            </tr>
+                            <tr>
+                                <td title="sachin">100</td>
+                                <td title="sachin">45</td>
+                                <td title="sachin">3000</td>
+                                <td title="sachin">3000</td>
+                                <td title="sachin">3000</td>
+                                <td title="sachin">3000</td>
+                            </tr>
+                            <tr>
+                                <td title="rohit">60</td>
+                                <td title="rohit">60</td>
+                                <td title="rohit">1000</td>
+                                <td title="rohit">60</td>
+                                <td title="rohit">60</td>
+                                <td title="rohit">60</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="form_layout">
+            <div class="container_1">
+                <div class="row1">
+                    <div>
+                        <label for="fname">First Name</label>
+                    </div>
+                    <div>
+                        <input type="text" id="fname" name="fname" value="Prudhvi" />
+                    </div>
+                </div>
+            </div>
+            <div class="container_1">
+                <div class="row1">
+                    <div>
+                        <label for="lname">Last Name</label>
+                    </div>
+                    <div>
+                        <input type="text" id="lname" name="lname" />
+                    </div>
+                </div>
+                <div class="row1">
+                    <div>
+                        <label for="phone">Phone</label>
+                    </div>
+                    <div>
+                        <input type="text" id="phone" name="phone" />
+                    </div>
+                </div>
+            </div>
+            <div class="container_1">
+                <div class="row1">
+                    <div>
+                        <legend style="text-align:center">Gender</legend>
+                    </div>
+                    <div>
+                        <input type="radio" name="gender" id="male" value='Male' />
+                        <label for="male">Male</label>
+                        <input type="radio" name="gender" id="female" value='FeMale' />
+                        <label for="female">FeMale</label>
+                    </div>
+                </div>
+                <div class="row1">
+                    <div>
+                        <label for="mail">Email</label>
+                    </div>
+                    <div>
+                        <input type="email" id="mail" name="mail" />
+                    </div>
+                </div>
+            </div>
+        <div class="container_1">
+            <div class="row1">
+                <input type="checkbox" id="agree" value="yes" name="agree" />
+                <label for="agree" name="agree">I agree terms and conditions</label>
+            </div>
+        </div>
+        <div class="container_1">
+            <div class="row1">
+                <button type="button"
+                    style="background-color: #9292FF;border: 0px;font-weight: bold;font-size:20px;">Button</button>
+            </div>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>
